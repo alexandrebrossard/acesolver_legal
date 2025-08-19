@@ -1,133 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AceSolver — Terms of Use</title>
-<style>
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:#111}
-  main{max-width:860px;margin:40px auto;padding:0 16px}
-  header{padding:16px 0;border-bottom:1px solid #eee;margin-bottom:16px}
-  nav a{margin-right:16px;text-decoration:none}
-  h1{font-size:clamp(28px,4vw,36px);margin:0 0 8px}
-  h2{margin-top:28px}
-  footer{margin:40px 0 60px;color:#666;font-size:14px}
-  .muted{color:#555}
-  ul{margin:0 0 16px 20px}
-</style>
-<main>
-  <header>
-    <h1>Terms of Use</h1>
-    <p class="muted"><strong>Last updated:</strong> August 18, 2025</p>
-    <nav><a href="/">Home</a> · <a href="/privacy/">Privacy Policy</a></nav>
-  </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AceSolver — Terms of Use & Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #141821;
+      --text: #e6e9ef;
+      --muted: #9aa4b2;
+      --link: #8ab4ff;
+      --border: #252b36;
+      --accent: #c6f6d5;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 20px 80px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 6px;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+    }
+    .last-updated {
+      color: var(--muted);
+      margin: 0 0 20px;
+      font-size: 0.95rem;
+    }
+    nav {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 18px 0 26px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px 14px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--link);
+    }
+    h2 { margin: 28px 0 10px; font-size: 1.35rem; }
+    h3 { margin: 24px 0 10px; font-size: 1.1rem; }
+    p { margin: 10px 0 14px; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 8px 0; }
+    a { color: var(--link); }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+    code, pre { background: #0b0d11; border: 1px solid var(--border); padding: 2px 6px; border-radius: 8px; }
+    .note { color: var(--muted); font-style: italic; }
+    .section-card { margin-bottom: 40px; }
+    @media print {
+      body { background: white; color: black; }
+      .card { box-shadow: none; border-color: #ddd; }
+      a { color: black; text-decoration: underline; }
+      nav { page-break-inside: avoid; }
+      h1 { break-before: page; }
+      .container { margin: 0; padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card section-card" id="terms">
 
-  <p>Welcome to <strong>AceSolver</strong> (the “App”), operated by <strong>AppThemis Technologies Inc.</strong> (“AppThemis,” “we,” “us,” or “our”). By downloading, accessing, or using the App, you agree to be bound by these Terms of Use (the “Terms”) and our <a href="/privacy/">Privacy Policy</a>. If you do not agree, do not use the App.</p>
 
-  <h2>1) Eligibility & Acceptance</h2>
-  <ul>
-    <li>You must be at least 13 years old to use the App. If you are under the age of majority in your jurisdiction, you may only use the App under the supervision of a parent or legal guardian who agrees to these Terms.</li>
-    <li>By creating an account, clicking “agree,” or using the App, you accept these Terms.</li>
-    <li>You are responsible for ensuring your use complies with all applicable laws (including any laws related to gaming or gambling).</li>
-  </ul>
+  <h1>AceSolver Terms of Use</h1>
+  <p class="last-updated">Last Updated: August 18, 2025</p>
 
-  <h2>2) Changes to These Terms</h2>
-  <p>We may update these Terms from time to time. If we make material changes, we will update the “Last updated” date above and, where appropriate, provide notice in the App. Your continued use of the App after changes become effective constitutes acceptance of the updated Terms.</p>
+  <nav> <ul> <li><a href="#introduction">Introduction</a></li> <li><a href="#account">Account Creation & Eligibility</a></li> <li><a href="#subscriptions">Subscriptions & Payments</a></li> <li><a href="#ai-services">AI Features and Third-Party Services</a></li> <li><a href="#user-content">User Content & Intellectual Property</a></li> <li><a href="#acceptable-use">User Obligations & Acceptable Use</a></li> <li><a href="#disclaimer">Disclaimers</a></li> <li><a href="#liability">Limitation of Liability</a></li> <li><a href="#indemnification">Indemnification</a></li> <li><a href="#termination">Termination</a></li> <li><a href="#governing-law">Governing Law</a></li> <li><a href="#changes-terms">Changes to Terms</a></li> <li><a href="#contact-terms">Contact Information</a></li> </ul> </nav>
 
-  <h2>3) Accounts & Security</h2>
-  <ul>
-    <li><strong>Account creation.</strong> Certain features require an account. When you sign in (including via Sign in with Apple), you agree to provide accurate, current, and complete information.</li>
-    <li><strong>Credentials.</strong> You are responsible for maintaining the confidentiality of your login and for all activity under your account.</li>
-    <li><strong>Notice of misuse.</strong> If you suspect unauthorized use of your account, contact us at <a href="mailto:contact@acesolver.com">contact@acesolver.com</a>. We are not liable for loss or damage arising from unauthorized use.</li>
-  </ul>
+  <h2 id="introduction">1. Introduction</h2>
+  <p>Welcome to AceSolver, an iOS mobile application (“<strong>App</strong>”) operated by **AppThemis Technologies Inc.**, a company based in Quebec, Canada (“<strong>Company</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”). These Terms of Use (“<strong>Terms</strong>” or “<strong>Agreement</strong>”) govern your access to and use of the AceSolver App and any related services. By downloading or using AceSolver, you agree to be bound by these Terms. If you do not agree with these Terms or are not legally able to agree (for example, if you are under the required age as set out below), you must not use the App.</p>
+  <p>Your use of AceSolver is also subject to our <a href="#privacy-policy">Privacy Policy</a>, which is incorporated by reference. Please read these Terms and the Privacy Policy carefully. This Agreement forms a legally binding contract between you and the Company. If you have any questions, you can contact us as outlined at the end of these Terms.</p>
 
-  <h2>4) The Service; AI Processing</h2>
-  <ul>
-    <li><strong>Decision support only.</strong> AceSolver provides informational analysis and recommendations for poker scenarios. It does not guarantee outcomes and is not financial, legal, or gambling advice.</li>
-    <li><strong>AI providers.</strong> To deliver results, the App sends your submitted <em>game data</em> (e.g., number of players, stacks, positions, actions, cards, hand histories) to third-party AI providers (currently including <strong>OpenAI</strong>) for processing and to return an analysis.</li>
-    <li><strong>Accuracy.</strong> AI outputs can be incomplete or inaccurate. You are responsible for your decisions and use of any results.</li>
-    <li><strong>Service changes.</strong> We may change, suspend, or discontinue features at any time.</li>
-  </ul>
+  <h2 id="account">2. Account Creation & Eligibility</h2>
+  <p><strong>Apple Sign-In:</strong> To use AceSolver, you are required to sign in with your Apple ID using “Sign in with Apple.” We collect your name and email address from Apple as part of the account registration process:contentReference[oaicite:0]{index=0}. (If you choose to hide your email through Apple’s privacy feature, we will receive an anonymous relay email instead, which we will treat as your email for account purposes:contentReference[oaicite:1]{index=1}.) You must ensure that the information provided via your Apple account (name and email) is accurate and up-to-date at all times.</p>
+  <p><strong>Age Requirements:</strong> You must be at least 13 years of age to use AceSolver. The App is not intended for children under 13, and we do not knowingly allow such individuals to use AceSolver. If you are between 13 and the age of majority in your jurisdiction, you affirm that you have the consent of your parent or legal guardian to use the App, and that your parent or guardian has reviewed and agreed to these Terms on your behalf. If we become aware that a child under 13 has created an account, we will terminate the account and delete any associated data, in accordance with our policies.</p>
+  <p><strong>Account Security:</strong> Your AceSolver account is tied to your Apple ID. You are responsible for maintaining the security of your Apple ID and for any activity that occurs under your AceSolver account. **Do not share access** to your Apple ID or AceSolver account with others. If you suspect any unauthorized use of your account, you must promptly notify us. We are not liable for any loss or damage arising from unauthorized use of your credentials.</p>
+  <p><strong>Account Responsibility:</strong> You agree that you will not create an account or use the App if we have previously terminated or banned you from AceSolver. We reserve the right to refuse registration or cancel accounts at our discretion if we find that a user has violated these Terms or is otherwise ineligible.</p>
 
-  <h2>5) Purchases, Subscriptions & Entitlements</h2>
-  <ul>
-    <li><strong>Subscriptions.</strong> Certain features are available via auto-renewing subscriptions. Pricing and available plans are shown in the App.</li>
-    <li><strong>Auto-renewal & billing.</strong> Payment is charged to your Apple ID at purchase confirmation and on renewal unless you cancel at least 24 hours before the period ends. Manage or cancel in your device’s subscription settings.</li>
-    <li><strong>One-time add-ons.</strong> We may offer one-time “booster” packs or similar entitlements. These are tied to your account per the App description at purchase time.</li>
-    <li><strong>Refunds.</strong> Fees are non-refundable except as required by law or by the platform’s (e.g., Apple’s) policies.</li>
-    <li><strong>Entitlement management.</strong> We may use an entitlement provider (e.g., a service such as RevenueCat) to verify purchases and manage access. We do not store your payment card details.</li>
-  </ul>
+  <h2 id="subscriptions">3. Subscriptions & Payments</h2>
+  <p><strong>In-App Purchases:</strong> AceSolver may offer premium features or content through auto-renewing in-app subscription purchases (e.g., monthly or annual plans). All subscriptions and payments are handled exclusively via Apple’s In-App Purchase system. This means that when you subscribe, your payment will be processed by Apple Inc., and you agree that all billing matters are governed by Apple’s App Store terms and conditions. We do not directly collect or store your payment information; Apple handles your payment details securely.</p>
+  <p><strong>Auto-Renewal:</strong> **Subscriptions automatically renew** unless you cancel at least 24 hours before the end of the current subscription period. Your Apple App Store account will be charged the subscription price (plus any applicable taxes) within 24 hours prior to the end of the current period, and the subscription will renew for an additional period of the same length. By subscribing, you authorize Apple to charge the then-applicable subscription fees to your App Store account at each renewal. If you do not want your subscription to renew automatically, you must turn off auto-renewal in your Apple ID account settings at least 24 hours before the current period ends.</p>
+  <p><strong>Managing Subscriptions:</strong> You can manage or cancel your AceSolver subscription at any time through your Apple App Store account settings. For example, to cancel, go to your device’s **Settings** &gt; **[Your Name]** &gt; **Subscriptions**, and select AceSolver to change or cancel your subscription. When you cancel a subscription, the cancellation will take effect at the end of the current billing period. You will retain access to premium features until the current paid period ends, and no further charges will be made. Please note that deleting the App does not automatically cancel an active subscription – you must actively cancel it through Apple.</p>
+  <p><strong>Free Trials and Promotions:</strong> If we offer a free trial period for a subscription, it will begin when you activate the trial and last for the indicated duration. Only one free trial per user is allowed, unless otherwise stated. If you do not cancel before the trial ends, your Apple account will be charged the applicable subscription fee when the trial period expires and the subscription will renew automatically as described above. We reserve the right to modify or terminate any promotional offers or free trials as permitted by applicable law.</p>
+  <p><strong>No Refunds:</strong> All purchases (including subscription fees) are final and non-refundable, except as required by law or as permitted by Apple’s App Store refund policies. If you believe you have grounds for a refund (for example, if you were charged in error), you will need to request a refund directly from Apple (for instance, by using Apple’s reportaproblem.apple.com website) because we are unable to process refunds for purchases made through the App Store. Nothing in these Terms affects any rights you have under applicable consumer protection laws.</p>
+  <p><strong>Changes in Fees:</strong> Subscription fees are subject to change. If the price of a subscription changes, we will provide you with advance notice of the new price to the email associated with your account or via notifications in the App. Price changes will not affect your active subscription period; they would apply to the next renewal. If you do not agree to a price change, you must cancel your subscription before the next billing date. By continuing to use the premium features after the price change takes effect, you agree to pay the new price.</p>
 
-  <h2>6) User Content & License</h2>
-  <ul>
-    <li><strong>User Content.</strong> “User Content” includes any materials you submit to the App, including game data.</li>
-    <li><strong>Your responsibility.</strong> You represent that your User Content is lawful and that you have all necessary rights to submit it. Do not submit content that is illegal, harmful, abusive, harassing, defamatory, obscene, infringing, or otherwise objectionable.</li>
-    <li><strong>License to us.</strong> You grant AppThemis a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, and display your User Content solely to operate, provide, and improve the App (including forwarding game data to AI providers for analysis).</li>
-    <li><strong>Monitoring.</strong> We may (but are not obligated to) monitor, remove, or restrict User Content at our discretion.</li>
-  </ul>
+  <h2 id="ai-services">4. AI Features and Third-Party Services</h2>
+  <p><strong>AI-Powered Analysis:</strong> AceSolver uses artificial intelligence features to analyze user-provided poker game data. In particular, the App sends the data you input about your poker games (such as hand histories or game scenarios) to OpenAI’s AI API service in order to generate analytical feedback and suggestions. **By using AceSolver, you agree and acknowledge that your content will be transmitted to and processed by OpenAI’s systems** for the purpose of providing you with analysis. OpenAI is a third-party service provider, and while we have a contract in place with OpenAI, the processing of data by OpenAI is subject to their own terms and policies.</p>
+  <p><strong>OpenAI Data Handling:</strong> We have configured our use of OpenAI such that your data is not used to train OpenAI’s public models. According to OpenAI’s API data usage policies, API inputs and outputs are not used to improve or train OpenAI’s models without our instruction:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}. OpenAI may, however, **temporarily store API request data (your prompts and the AI’s responses) for up to 30 days** on their servers for monitoring abuse and service improvements:contentReference[oaicite:4]{index=4}. After 30 days, OpenAI deletes those API inputs and outputs from their systems unless otherwise required by law:contentReference[oaicite:5]{index=5}. By using AceSolver, you consent to this processing by OpenAI. We do not control OpenAI’s internal policies, but we have taken steps to ensure your data is handled in line with OpenAI’s platform rules and applicable privacy requirements. For more details, you can review OpenAI’s API data usage policy (available on OpenAI’s official website).</p>
+  <p><strong>Other Third-Party Services:</strong> In addition to OpenAI, AceSolver relies on other third-party services to function properly. **Supabase** is used as our application database and analytics platform, where we securely store your account data and submissions. **RevenueCat** is used to manage subscription status and entitlements, by validating App Store purchase receipts and tracking subscription status across your devices:contentReference[oaicite:6]{index=6}. These third-party providers act as our service providers and may process certain personal data strictly on our behalf and under our instructions (see our Privacy Policy for more details). We do not share your personal information with them beyond what is necessary to provide the AceSolver services (for example, RevenueCat is given an anonymous user identifier and purchase receipts, and does *not* receive your name or contact information:contentReference[oaicite:7]{index=7}).</p>
+  <p><strong>No Control Over Third-Party Services:</strong> You acknowledge that the availability and quality of AceSolver’s functionality may depend on these third-party services (such as OpenAI’s uptime or Apple’s systems for Sign-In and payments). We are not responsible for acts or omissions of third-party providers. While we strive to ensure our partners are reliable and secure, we make no guarantees regarding the continuous availability or error-free operation of third-party services. Any content or analysis provided to you via AceSolver is subject to the disclaimers and limitations in these Terms, including any limitations arising from third-party services’ performance.</p>
+  <p><strong>Third-Party Terms:</strong> Your use of AceSolver must comply not only with our Terms but also with the terms of any platform or service that we integrate with. This means you agree to abide by Apple’s App Store rules and OpenAI’s acceptable use policies when using AceSolver. For example, OpenAI prohibits certain types of content from being submitted to their AI (such as content that is illegal or violates intellectual property rights), and by using AceSolver, you agree that you will not attempt to use the App to input or generate any such prohibited content. We reserve the right to suspend or terminate your access to the App if your usage violates the policies of our third-party partners or poses a risk to our continued access to those services.</p>
+  <p><strong>Disclaimer about AI Outputs:</strong> The analysis and recommendations provided by AceSolver’s AI features are **for informational and entertainment purposes only**. The AI-generated content is not guaranteed to be accurate, complete, or free of objectionable material. **Artificial intelligence is an evolving technology**; as a result, the AI’s analysis may at times be incorrect or misleading, may fail to reflect real-life conditions, or might even produce content that could be deemed inappropriate or offensive:contentReference[oaicite:8]{index=8}. The insights provided should not be relied upon as your sole source of factual information or strategy. **AceSolver is not a professional gambling advisory service**, and the AI’s suggestions do not constitute professional or financial advice. Always use your own judgment and common sense when making decisions in real poker games.</p>
 
-  <h2>7) Acceptable Use; Restrictions</h2>
-  <ul>
-    <li>Do not violate laws or third-party rights.</li>
-    <li>Do not attempt to access the App or its APIs in ways that exceed documented limits or that burden, disrupt, or interfere with the service.</li>
-    <li>Do not scrape, mine, reverse engineer, decompile, or attempt to extract source code except as permitted by law.</li>
-    <li>Do not bypass paywalls, entitlement checks, or security features.</li>
-    <li>Do not use the App to develop or train competing models/services except with our written consent.</li>
-  </ul>
+  <h2 id="user-content">5. User Content & Intellectual Property</h2>
+  <p><strong>User Content Submissions:</strong> AceSolver allows you to input your own poker game data, scenarios, hand histories, chat messages, or other content (“<strong>User Content</strong>”) in order to receive AI analysis. You retain any ownership rights you have in the User Content you provide. We **do not claim ownership** of your hands, strategies, or any other material you submit; however, by submitting User Content through AceSolver, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, display, adapt, and transmit your content as necessary to (a) provide the AceSolver service to you (including processing it through the OpenAI API), (b) store it in our systems (e.g., in our Supabase database), and (c) improve and develop our products and features. This license is for the limited purpose of operating and improving the App and will only continue as long as needed for those purposes. Please do not submit any content that you do not have the rights or permission to use in this way.</p>
+  <p><strong>Responsibility for User Content:</strong> You are solely responsible for the content you input into AceSolver and the results of processing that content. You represent and warrant that you have all necessary rights to provide the User Content to us and to grant the license above, and that your content does not infringe or violate the rights of any third party. **Do not upload anything illegal, confidential (if it’s not yours to share), or any personal data about others without consent.** While we do not pre-screen user submissions, we reserve the right (but not the obligation) to remove or disable access to any content that we believe violates these Terms or applicable law.</p>
+  <p><strong>Our Intellectual Property:</strong> Except for User Content, all other content and materials available on or through AceSolver, including but not limited to the software code, design, algorithms, textual or graphic content we provide, and the “AceSolver” name, logo, and all related trademarks, are the property of AppThemis Technologies Inc. or its licensors and are protected by intellectual property laws. We grant you a limited, personal, non-transferable, non-sublicensable, revocable license to use the AceSolver App and its content for your own personal, non-commercial use, strictly as permitted by these Terms. You may **not** copy, distribute, modify, create derivative works based on, publicly display, publicly perform, or sublicense any part of the App or its content except as authorized in these Terms or expressly in writing by us. All rights not expressly granted to you are reserved by us and our licensors.</p>
+  <p><strong>AI Output Ownership:</strong> The analytical output generated by the AI in response to your input is derived from your User Content and our service. To the extent permitted by law, we consider that **you have rights to use and share the AI-generated output** from AceSolver for any lawful purpose (personal or academic use, etc.), *provided* that such use is consistent with these Terms. However, you acknowledge that AI-generated content may not be copyrightable or may be subject to certain legal uncertainties. We make no representation as to the ownership or enforceability of intellectual property rights in AI-generated content. In any event, we grant you a license to use any copyright or other rights we could claim in the AI’s output, so that you can use the results freely. That said, you agree not to remove any watermarks, disclaimers, or notices that might be included with the AI output (if any), and you must not present the AI output as if it were human-generated advice from us or an expert.</p>
+  <p><strong>Feedback:</strong> If you provide us with any suggestions, ideas, or feedback about AceSolver (“Feedback”), you agree that we can use and share such Feedback for any purpose, without any compensation to you, and that we own all rights (including intellectual property rights) in any improvements or services developed based on your Feedback. Please note that providing Feedback is entirely voluntary and at your discretion.</p>
 
-  <h2>8) Intellectual Property</h2>
-  <ul>
-    <li><strong>Ownership.</strong> The App, including all content, software, and trademarks, is owned by AppThemis or its licensors.</li>
-    <li><strong>License to you.</strong> Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable license to use the App for its intended purpose.</li>
-    <li><strong>Feedback.</strong> If you provide feedback, you grant us a worldwide, royalty-free, irrevocable, sublicensable license to use and exploit it without obligation to you.</li>
-  </ul>
+  <h2 id="acceptable-use">6. User Obligations & Acceptable Use</h2>
+  <p>You agree to use AceSolver only for lawful purposes and in accordance with these Terms. **By using the App, you specifically agree that you will NOT:**</p>
+  <ul> <li><strong>Violate Laws or Rights:</strong> Use AceSolver in any manner that violates any applicable law or regulation, or for any unlawful purpose. This includes, for example, attempting to use the App to facilitate or promote illegal gambling activities. AceSolver is intended as a poker training and analysis tool, and you must comply with all laws regarding poker or gaming in your jurisdiction.</li> <li><strong>Inappropriate Content:</strong> Input or attempt to generate through the AI any content that is obscene, pornographic, hateful, harassing, threatening, abusive, violent, or otherwise objectionable. You also must not use the App to create content that infringes on anyone’s intellectual property or privacy rights, or that violates OpenAI’s usage policies (which prohibit, for instance, content related to child exploitation, terrorism, self-harm instructions, etc.). We reserve the right to filter or moderate inputs to the AI and may use OpenAI’s content moderation tools to reject or block disallowed content:contentReference[oaicite:9]{index=9}.</li> <li><strong>Security Interference:</strong> Attempt to probe, scan, or test the vulnerability of the App, our servers, or any related system or network. You must not breach or circumvent any security or authentication measures, or introduce any malware, virus, or harmful code into the App. Also, do not attempt to gain unauthorized access to any accounts, data, or systems related to AceSolver.</li> <li><strong>Reverse Engineering:</strong> Copy, decompile, disassemble, or reverse engineer the App, or attempt to derive the source code or underlying algorithms of any part of AceSolver, except as allowed by law (and if law allows it, only after providing us with prior written notice).</li> <li><strong>Resale or Commercial Use:</strong> Exploit the App or any portion of it for any commercial purpose not expressly approved by us. AceSolver is licensed for personal use only; you may not rent, sell, or sublicense access to the App, nor use it to provide services to third parties (for example, you cannot use our AI analysis and charge others for its output without our permission).</li> <li><strong>Impersonation and Misrepresentation:</strong> Impersonate any person or entity or falsely state or otherwise misrepresent your affiliation with a person or entity while using the App. You should not imply that the analysis or statements generated by AceSolver’s AI are made by a human or an expert, or that they reflect the opinions of any real person or of the Company.</li> <li><strong>Excessive or Automated Use:</strong> Use any automated system (such as scripts, bots, or scrapers) to access the App or AceSolver’s APIs in a manner that sends more requests to the service than a human could reasonably produce, or that otherwise interferes with the normal functionality. You also agree not to attempt to mass-download outputs or flood the system with unreasonable amounts of data. Our service is optimized for interactive personal use; excessive usage may result in suspension.</li> </ul>
+  <p>If you engage in any of the above prohibited conducts, it constitutes a material breach of these Terms and may result in immediate termination or suspension of your account (without limiting any other remedies we may have by law). We may also report any illegal activities to law enforcement or cooperate with any investigation as appropriate.</p>
 
-  <h2>9) DMCA / Copyright</h2>
-  <p>If you believe content in the App infringes your copyright, send a notice to our designated agent at <a href="mailto:contact@acesolver.com">contact@acesolver.com</a> including:</p>
-  <ul>
-    <li>Your physical/electronic signature and authority to act.</li>
-    <li>Identification of the copyrighted work and the allegedly infringing material (with location).</li>
-    <li>Your contact information.</li>
-    <li>A good-faith statement that the use is not authorized.</li>
-    <li>A statement under penalty of perjury that the information is accurate and you are authorized to act.</li>
-  </ul>
+  <h2 id="disclaimer">7. Disclaimers</h2>
+  <p><strong>No Warranty:</strong> **AceSolver is provided on an “AS IS” and “AS AVAILABLE” basis.** To the maximum extent permitted by law, the Company and its affiliates, licensors, and service providers (including OpenAI) disclaim all warranties, whether express, implied, or statutory, regarding the AceSolver App and any content or features provided therein. This includes any implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, and any warranties arising from course of dealing or usage of trade. We do not guarantee that the App will be uninterrupted, error-free, or secure, that defects will be corrected, or that the App will be compatible with your device or free of viruses or other harmful components.</p>
+  <p><strong>AI Output Discretion:</strong> Use of AceSolver’s AI-based analysis is at **your own discretion and risk**. You understand that the AI may occasionally produce incorrect, unreliable, or inappropriate suggestions. **We make no warranty or representation as to the accuracy or quality of any AI-generated output.** You agree that you will not rely solely on AceSolver’s analysis for making important decisions, and that any decisions or actions you take (for example, playing a poker hand a certain way or wagering money based on AceSolver’s advice) are solely your responsibility. **AI-generated output may be incomplete or contain errors**; it might even reflect biases or make statements that do not represent our views:contentReference[oaicite:10]{index=10}. We do not endorse or verify the accuracy of any information or advice generated by the AI.</p>
+  <p><strong>No Guarantee of Results:</strong> The purpose of AceSolver is to help you improve at poker through analysis and feedback. However, we do not guarantee that using AceSolver will improve your poker skills, make you a better player, or increase your chances of winning money. Poker involves many factors (including chance), and AI suggestions are just one tool among many. You should not regard the App’s output as a promise of any particular outcome in real gameplay. **The Company is not responsible for any losses, financial or otherwise, that you may incur in real-life poker or other activities, even if those losses are claimed to be related to advice or analysis from the App.**</p>
+  <p><strong>Third-Party Content and Services:</strong> AceSolver may incorporate data or services from third parties (such as the OpenAI API, Apple’s systems, or Supabase). We disclaim any responsibility for any harm or damages arising from the acts, omissions, or errors of third-party providers. For example, we are not liable for any breach of security that occurs on OpenAI’s side, or any downtime in Apple’s in-app purchase system, or any issues attributable to Supabase or RevenueCat. While we choose our providers carefully, we have no ultimate control over their operations. Any references in the App to third-party products or services (for example, if the AI output mentions a third-party poker tool or strategy) do not constitute endorsements by us.</p>
+  <p><strong>Beta Features:</strong> If AceSolver offers any experimental or beta features, those are provided without any warranties whatsoever and exclusively as a courtesy. Such features might be unstable or change without notice. You use beta features entirely at your own risk.</p>
+  <p><strong>Applicable Law Exclusions:</strong> Some jurisdictions do not allow the exclusion of certain warranties. If you reside in such a jurisdiction, some of the above exclusions may not apply to you. In such cases, to the extent any warranty cannot be disclaimed, the duration and scope of such warranty will be the minimum permissible under applicable law.</p>
 
-  <h2>10) Third-Party Services; Platform Terms</h2>
-  <ul>
-    <li>Your use of third-party services (e.g., OpenAI processing; platform payments/entitlements) is subject to their terms and privacy policies.</li>
-    <li>If you obtained the App from the Apple App Store, your use is also governed by Apple’s applicable terms. Apple is not responsible for providing maintenance or support for the App.</li>
-  </ul>
+  <h2 id="liability">8. Limitation of Liability</h2>
+  <p><strong>Indirect Damages:</strong> To the fullest extent permitted by law, in no event will the Company, its officers, directors, employees, shareholders, agents, affiliates, suppliers, or licensors be liable to you for any **indirect, incidental, special, consequential, or punitive damages** whatsoever. This includes, without limitation, damages for loss of profits or winnings, loss of data, loss of goodwill, service interruption, computer damage, or system failure, or the cost of substitute services, arising out of or in connection with these Terms or from the use of or inability to use AceSolver, whether based on warranty, contract, tort (including negligence), strict liability, or any other legal theory, and whether or not we have been informed of the possibility of such damage.</p>
+  <p><strong>Direct Damages Cap:</strong> To the fullest extent permitted by law, the total liability of the Company and its affiliates, officers, employees, and agents, for any claims under these Terms or relating to use of AceSolver, whether in contract, tort, or otherwise, is limited to the **amount you have paid to us (if any) in the last twelve (12) months** for the use of AceSolver, or **CAD $100**, whichever is greater. If you have not made any payments to us (for example, if you only used the free features), the Company’s total liability shall not exceed CAD $100.</p>
+  <p><strong>User Content and AI Outputs:</strong> You acknowledge that we cannot reasonably control the information that you choose to input into the App or that the AI outputs in response. **We shall not be liable for any content generated by you or the AI**, even if that content is offensive, erroneous, or otherwise harms you or any third party. For example, if the AI gives you a suggestion that you act upon and it leads to an unwanted result (such as a financial loss), you assume full responsibility for the outcome. Likewise, if you input content that is defamatory or infringing and it causes harm to others, you are solely responsible for that.</p>
+  <p><strong>Third-Party Claims:</strong> Under no circumstances will the Company be liable for any claim, loss, or injury resulting from any third-party conduct or the unauthorized access or use of our servers and/or any personal information stored therein. Additionally, if any third party brings a claim against us related to your use of the App (for example, a claim that your content violated their rights or caused them damage), you agree to indemnify and hold us harmless as described in the Indemnification section below.</p>
+  <p><strong>Applicability:</strong> Nothing in this section is intended to exclude or limit liability that cannot be excluded under applicable law (for example, certain liabilities under Quebec consumer protection laws or for intentional misconduct). However, in any case, our liability is limited to the maximum extent permitted by law. The limitations in this section will apply even if any limited remedy fails of its essential purpose.</p>
 
-  <h2>11) Disclaimers</h2>
-  <p><strong>THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE.”</strong> To the maximum extent permitted by law, AppThemis disclaims all warranties, express or implied, including merchantability, fitness for a particular purpose, non-infringement, and that the App will be uninterrupted, error-free, or secure. Outputs generated by AI may be inaccurate or incomplete.</p>
+  <h2 id="indemnification">9. Indemnification</h2>
+  <p>You agree to **indemnify, defend, and hold harmless** AppThemis Technologies Inc., its parent, affiliates, and their respective officers, directors, employees, and agents (the “Indemnified Parties”) from and against any and all claims, liabilities, damages, losses, and expenses (including reasonable attorneys’ fees and costs) that arise out of or relate to: (a) your use or misuse of AceSolver; (b) your violation of any of these Terms; (c) your User Content (including any content that the AI generates based on your input) or any interaction you have through the App; or (d) your violation of any law or regulation or the rights of any third party. This means that if a third party (for example, another poker player, a regulator, or any other party) makes a claim against one of the Indemnified Parties because of something you did in breach of these Terms or applicable law, you will be responsible for any costs or damages we incur in connection with that claim.</p>
+  <p>We reserve the right to assume the exclusive defense and control of any matter subject to indemnification by you, in which case you agree to cooperate with our defense of that claim. You agree not to settle any such matter without our prior written consent. Your indemnification obligations will survive any termination of your account or these Terms.</p>
 
-  <h2>12) Limitation of Liability</h2>
-  <p>To the maximum extent permitted by law, AppThemis and its affiliates, officers, employees, and suppliers will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost profits, revenues, data, or goodwill, arising out of or relating to your use of the App. Our total liability for all claims relating to the App will not exceed the amounts you paid to us (if any) for the App in the six (6) months prior to the event giving rise to liability.</p>
+  <h2 id="termination">10. Termination</h2>
+  <p><strong>By You:</strong> You may stop using AceSolver at any time. You also have the right to delete your AceSolver account if you no longer wish to use the service. Account deletion may be done through an in-app feature (if available) or by contacting our support (see Contact Information below). Terminating your account will end your license to use the App, and you will lose access to any data associated with your account (except to the extent we are required or permitted to retain certain data under our Privacy Policy or by law).</p>
+  <p><strong>By Us:</strong> We may suspend or terminate your access to AceSolver (or certain features of the App) at any time, **with or without notice,** if we reasonably believe: (a) you have breached any provision of these Terms or have misused the App; (b) your continued use poses a security or legal risk to us or to other users; (c) we discontinue the App or experience unexpected technical or security issues; or (d) we are required to do so by law or by our partners (for example, if OpenAI or Apple restricts our access for a violation caused by your use). We will try to give you advance notice where practicable, but this may not be possible in all cases (for instance, if you flagrantly violate these Terms or law).</p>
+  <p><strong>Effect of Termination:</strong> Upon termination of your account, whether by you or us, your right to use the App will immediately cease, and the license provided to you under these Terms will end. We may immediately deactivate or delete your account and all associated data and bar any further access to such data. You may lose access to any content or features within the App (including any stored User Content or chat histories). We are not required to provide you with copies of your data once your account is terminated, except as may be provided in our Privacy Policy or required by law. We recommend that you export or save any content that you want to keep before you delete your account or if we notify you of termination.</p>
+  <p><strong>Survival:</strong> The provisions of these Terms that by their nature should survive termination (such as intellectual property rights, disclaimers of warranties, limitation of liability, indemnification, and governing law) will continue to apply even after your use of AceSolver has ended.</p>
 
-  <h2>13) Indemnification</h2>
-  <p>You agree to defend, indemnify, and hold harmless AppThemis and its affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys’ fees) arising from your use of the App, your violation of these Terms, or your violation of any third-party rights.</p>
+  <h2 id="governing-law">11. Governing Law</h2>
+  <p>These Terms and any action related to them will be governed by and construed in accordance with the laws of the **Province of Quebec**, and the federal laws of Canada applicable therein, without regard to its conflict of law principles. If you reside outside of Canada, you understand and agree that you are voluntarily choosing to use a Canadian-based service and that your relationship with us will be governed by Canadian (and specifically Quebec) law.</p>
+  <p><strong>Jurisdiction:</strong> Subject to any specific legal rights you may have as a consumer, you agree that any dispute arising out of or relating to these Terms or AceSolver that cannot be resolved through informal negotiation will be brought exclusively in the courts of competent jurisdiction located in the Province of Quebec, Canada. You and the Company each consent to the personal jurisdiction of these courts. Notwithstanding the foregoing, we reserve the right to seek injunctive relief in any jurisdiction if necessary to prevent misuse of our intellectual property or breaches of these Terms.</p>
+  <p><strong>Language:</strong> The parties confirm that it is their express wish that these Terms of Use and all related documents be drawn up in English. **Les parties confirment leur volonté expresse que la présente convention et tous les documents s’y rattachant soient rédigés en anglais.**</p>
+  <p><em>Note:</em> If you are a consumer residing in a jurisdiction that provides you with mandatory protections under its local consumer laws, those protections will apply in addition to the ones set out in these Terms. In the event of a direct conflict between those consumer laws and this Agreement, the provision that is more protective of you, the consumer, will apply.</p>
 
-  <h2>14) Suspension & Termination</h2>
-  <ul>
-    <li><strong>By you.</strong> You may stop using the App at any time and may request account deletion via in-app mechanisms (if available) or by emailing <a href="mailto:contact@acesolver.com">contact@acesolver.com</a>.</li>
-    <li><strong>By us.</strong> We may suspend or terminate your access at any time, including if you violate these Terms or if we discontinue the App.</li>
-    <li><strong>Survival.</strong> Sections that by their nature should survive termination (e.g., intellectual property, disclaimers, limitations of liability, indemnification) will survive.</li>
-  </ul>
+  <h2 id="changes-terms">12. Changes to Terms</h2>
+  <p>We may update or revise these Terms of Use from time to time. If we make material changes, we will notify you by posting the updated Terms within the App and updating the “Last Updated” date at the top. In some cases, we may provide additional notice to you (such as by email or an in-app notification) of significant changes. **It is your responsibility to review these Terms periodically.** Any changes will be effective when they are posted, unless stated otherwise. By continuing to use AceSolver after the revised Terms have become effective, you are agreeing to be bound by the updated Terms. If you do not agree to the new Terms, you must stop using the App and, if applicable, cancel your subscription and delete your account.</p>
 
-  <h2>15) Governing Law & Venue</h2>
-  <p>These Terms are governed by the laws of the Province of Quebec and the federal laws of Canada applicable therein, without regard to conflict-of-laws rules. The courts located in Quebec, Canada shall have exclusive jurisdiction over any dispute arising from or relating to these Terms or the App, and you consent to such jurisdiction and venue.</p>
+  <h2 id="contact-terms">13. Contact Information</h2>
+  <p>If you have any questions, concerns, or feedback about these Terms or the AceSolver App, please contact us at:</p>
+  <p><strong>AppThemis Technologies Inc.</strong>Email: <a href="mailto:support@acesolver.com">support@acesolver.com</a> (or <a href="mailto:contact@acesolver.com">contact@acesolver.com</a> for privacy-related queries)</p>
+  <p>We will do our best to respond to your inquiries in a timely manner. By contacting us, you consent to our use of your contact information to respond to you. Please consult our Privacy Policy to understand how we handle personal data in communications.</p>
 
-  <h2>16) Miscellaneous</h2>
-  <ul>
-    <li><strong>Entire agreement.</strong> These Terms, together with the Privacy Policy, constitute the entire agreement between you and AppThemis regarding the App and supersede prior agreements.</li>
-    <li><strong>Assignment.</strong> You may not assign these Terms without our consent. We may assign them as part of a merger, acquisition, or sale.</li>
-    <li><strong>Severability; waiver.</strong> If any provision is unenforceable, the remaining provisions remain in effect. Our failure to enforce a provision is not a waiver.</li>
-    <li><strong>Headings.</strong> Headings are for convenience only and do not affect interpretation.</li>
-  </ul>
 
-  <h2>17) Contact</h2>
-  <p>Questions about these Terms? Contact us at <a href="mailto:contact@acesolver.com">contact@acesolver.com</a>.</p>
 
-  <footer>
-    <p>© 2025 AppThemis Technologies Inc.</p>
-  </footer>
-</main>
-</html>
